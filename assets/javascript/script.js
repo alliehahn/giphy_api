@@ -5,7 +5,7 @@ $(".click").click(function() {
     var number = parseInt($(this).val());
     console.log(number);
     var input = topics[number];
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+input+ "&api_key=yoY8WGlVRAFrybPEutH2LAhyth9Nagwa&limit=10")
+    var xhr = $.get("https://api.giphy.com/v1/gifs/search?q="+input+ "&api_key=yoY8WGlVRAFrybPEutH2LAhyth9Nagwa&limit=10")
 
     xhr.done(function(data) { 
         console.log("success got data", data);
